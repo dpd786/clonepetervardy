@@ -1,0 +1,33 @@
+html, body {
+	font-size: 16px;
+}
+.navbar {
+	margin: 0;
+	border: 0;
+}
+.navbar-brand {
+	height: 96px;
+}
+
+.fixedWidth {
+	max-width: 1190px;
+	margin: 0 auto;
+}
+#navMenu {
+	list-style-type: none;
+	padding: 30px 5px 0;
+	margin: 0;
+	display: inline-block;
+}
+#navMenu li {
+	float: left;
+	font-weight: bold;
+	color: #5c5c5c;
+	font-size: 1em;
+	padding-bottom: 44px;
+}
+#navMenu li a {
+	padding: 2px 12px 4px;
+	border-right: 1px solid #ccc;
+	line-height: 22px;
+}
