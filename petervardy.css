@@ -1,33 +1,57 @@
+* {
+  font-family: sans-serif;
+}
 html, body {
 	font-size: 16px;
-}
-.navbar {
+	padding: 0;
 	margin: 0;
-	border: 0;
-}
-.navbar-brand {
-	height: 96px;
+	min-width: 360px;
 }
 
-.fixedWidth {
-	max-width: 1190px;
-	margin: 0 auto;
+#logo {
+	text-align: center;
+	margin: 19px 0;
+	padding: 0;
 }
-#navMenu {
-	list-style-type: none;
-	padding: 30px 5px 0;
-	margin: 0;
-	display: inline-block;
+.navbar {
+  background-color: #e7e4e4;
+  width: 100%;
 }
-#navMenu li {
-	float: left;
-	font-weight: bold;
-	color: #5c5c5c;
-	font-size: 1em;
-	padding-bottom: 44px;
+.navbar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
 }
-#navMenu li a {
-	padding: 2px 12px 4px;
-	border-right: 1px solid #ccc;
-	line-height: 22px;
+.navbar li {
+  float: left;
+  position: relative;
+  width: 33%;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+.nabvar li:last-child {
+  border: none;
+}
+.navbar a {
+  text-decoration: none;
+  color: #5f6061;
+  font-size: 1.1em;
+  display: block;
+  padding: 12px 10px;
+  font-weight: bold;
+}
+.navbar a:hover {
+  background-color: yellow;
+}
+.navbar li.bor-right:after {
+  content : "";
+  position: absolute;
+  right    : 0;
+  z-index: 100;
+  top  : 25%;
+  width  : 1px;
+  height   : 50%;  /* or 100px */
+  background: #ccc;
 }
