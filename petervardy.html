@@ -3,7 +3,7 @@
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<title>Peter Vardy</title>
-	
+
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="normalize.css" >
 	<link rel="stylesheet" href="petervardy.css" >
@@ -27,6 +27,33 @@
 	<nav id="petervardylogo"><img src="petervardy.jpg" alt="Peter Vardy" /></nav>
 </header>
 -->
+<form class="search-dropdown-content">
+	<h2>Find your next car here</h2>
+	<select id="make" name="make">
+        <option value="any" selected>Make (any)</option>
+        <option value="audi">Audi</option>
+        <option value="bmw">BMW</option>
+  </select><br>
+  <select id="model" name="model" disabled>
+    <option value="any" selected>Model (any)</option>
+    <option value="audi">Audi</option>
+    <option value="bmw">BMW</option>
+  </select><br>
+  <select id="cartype" name="cartype">
+    <option value="any" selected>Car Type (any)</option>
+    <option value="nearlynew">Nearly New</option>
+    <option value="new">New</option>
+    <option value="used">Used</option>
+  </select><br>
+  <fieldset id="searchBy">
+    <div class="searchBy">Search by: <span id="cashPrice">Cash Price</span><span id="monthlyPrice"</span>Monthly Payments</div>
+    <input type="text">
+    Email: <input type="text">
+  </fieldset>
+	<input type="text" placeholder="Postcode" id="postcode">
+	<div id="postcodetext">Show cars near you</div>
+	<button id="search-button">Search Cars<span> cars available</span></button>
+</form>
 <!-- FULL WIDTH PAGINATION PAGE  HERE -->
 
 <!-- MAIN CONTENT HERE -->

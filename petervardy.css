@@ -31,9 +31,6 @@ html, body {
   padding: 0;
   margin: 0;
 }
-.nabvar li:last-child {
-  border: none;
-}
 .navbar a {
   text-decoration: none;
   color: #5f6061;
@@ -54,4 +51,8 @@ html, body {
   width  : 1px;
   height   : 50%;  /* or 100px */
   background: #ccc;
+}
+.search-dropdown-content {
+  margin: 0;
+  padding: 10px;
 }
