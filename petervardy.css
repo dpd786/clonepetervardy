@@ -54,5 +54,70 @@ html, body {
 }
 .search-dropdown-content {
   margin: 0;
+  padding: 10px 15px;
+}
+
+.search-dropdown-content h2 {
+  font-size: 1.1em;
+  color: #37383a;
+}
+.search-dropdown-content select {
+  padding: 5px 2px;
+  font-size: 0.9em;
+  width: 100%;
+  background-color: #fff;
+  border: 1px solid #aaa;
+}
+.search-dropdown-content select,
+.search-dropdown-content #searchBy {
+  margin: 0;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  -moz-appearance:none;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+/*CHANGE ARROW FOR CROSS BROWSER */
+.changeDownArrow {
+  position: relative;
+}
+.changeDownArrow select {
+  background: transparent;
+}
+.changeDownArrow::after {
+  content: "\f0d7";
+  font-family: "FontAwesome";
+  position: absolute;
+  top:calc(50% - 16.5px);
+  right: 10px;
+  z-index: -1;
+}
+select::-ms-expand {
+  display: none;
+}
+/* -------------------- */
+
+#searchBy {
+  border: 1px solid #aaa;
   padding: 10px;
+  background-color: #fefefe;
+  overflow: hidden;
+  position: relative;
+}
+.searchBy {
+  font-size: 0.8em;
+  float: left;
+  padding: 2px 0;
+}
+#cashMonthly {
+  float: left;
+  font-size: 0.9em;
+  margin-bottom: 15px;
+  padding-right: 40px;
+}
+.priceSearch {
+  clear: both;
+  width: 49%;
+  display: inline-block;
 }

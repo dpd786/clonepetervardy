@@ -29,28 +29,53 @@
 -->
 <form class="search-dropdown-content">
 	<h2>Find your next car here</h2>
-	<select id="make" name="make">
+	<div class="changeDownArrow">
+		<select id="make" name="make">
         <option value="any" selected>Make (any)</option>
         <option value="audi">Audi</option>
         <option value="bmw">BMW</option>
-  </select><br>
-  <select id="model" name="model" disabled>
-    <option value="any" selected>Model (any)</option>
-    <option value="audi">Audi</option>
-    <option value="bmw">BMW</option>
-  </select><br>
-  <select id="cartype" name="cartype">
-    <option value="any" selected>Car Type (any)</option>
-    <option value="nearlynew">Nearly New</option>
-    <option value="new">New</option>
-    <option value="used">Used</option>
-  </select><br>
-  <fieldset id="searchBy">
-    <div class="searchBy">Search by: <span id="cashPrice">Cash Price</span><span id="monthlyPrice"</span>Monthly Payments</div>
-    <input type="text">
-    Email: <input type="text">
-  </fieldset>
-	<input type="text" placeholder="Postcode" id="postcode">
+  	</select>
+	</div>
+	<div class="changeDownArrow">
+	  <select id="model" name="model" disabled>
+	    <option value="any" selected>Model (any)</option>
+	    <option value="audi">Audi</option>
+	    <option value="bmw">BMW</option>
+	  </select>
+	</div>
+	<div class="changeDownArrow">
+	  <select id="cartype" name="cartype">
+	    <option value="any" selected>Car Type (any)</option>
+	    <option value="nearlynew">Nearly New</option>
+	    <option value="new">New</option>
+	    <option value="used">Used</option>
+	  </select>
+	</div>
+  <div id="searchBy">
+    <div class="searchBy">Search by:&nbsp;&nbsp;</div>
+		<div id="cashMonthly"><span id="cashPrice">Cash Price</span><span id="monthlyPrice"</span>Monthly Payments</div>
+		<div class="changeDownArrow priceSearch">
+			<select id="minPrice" name="minPrice">
+				<option value="">Min Price</option>
+				<option value="">£2000</option>
+				<option value="">£3000</option>
+				<option value="">£4000</option>
+				<option value="">£5000</option>
+			</select>
+		</div>
+		<div class="changeDownArrow priceSearch">
+			<select name="maxPrice" id="maxPrice">
+				<option value=""></option>
+				<option value=""></option>
+				<option value=""></option>
+				<option value=""></option>
+				<option value=""></option>
+			</select>
+		</div>
+  </div>
+	<div>
+		<input type="text" placeholder="Postcode" id="postcode">
+	</div>
 	<div id="postcodetext">Show cars near you</div>
 	<button id="search-button">Search Cars<span> cars available</span></button>
 </form>
