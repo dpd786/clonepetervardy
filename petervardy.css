@@ -101,7 +101,6 @@ select::-ms-expand {
 #searchBy {
   border: 1px solid #aaa;
   padding: 10px;
-  background-color: #fefefe;
   overflow: hidden;
   position: relative;
 }
