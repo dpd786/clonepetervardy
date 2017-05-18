@@ -62,7 +62,7 @@ html, body {
   color: #37383a;
 }
 .search-dropdown-content select {
-  padding: 5px 2px;
+  padding: 5px 0px 5px 2px;
   font-size: 0.9em;
   width: 100%;
   background-color: #fff;
@@ -89,9 +89,12 @@ html, body {
   content: "\f0d7";
   font-family: "FontAwesome";
   position: absolute;
-  top:calc(50% - 16.5px);
-  right: 10px;
+  top:calc(50% - 24px);
+  right: 0px;
   z-index: -1;
+  padding: 7px;
+  background-color: #eee;
+  border-radius: 0 5px 5px 0;
 }
 select::-ms-expand {
   display: none;
@@ -103,20 +106,88 @@ select::-ms-expand {
   padding: 10px;
   overflow: hidden;
   position: relative;
+  background-color: #eee;
+
 }
 .searchBy {
   font-size: 0.8em;
   float: left;
-  padding: 2px 0;
+  padding: 2px 5px 15px 0;
+  display: block;
 }
 #cashMonthly {
   float: left;
   font-size: 0.9em;
-  margin-bottom: 15px;
-  padding-right: 40px;
+  padding-bottom: 15px;
+  padding-right: 60px;
+  display: block;
+}
+#priceDiv {
+  clear: both;
 }
 .priceSearch {
   clear: both;
   width: 49%;
   display: inline-block;
+  background-color: #fff;
 }
+#cashPrice {
+  vertical-align: top;
+  padding-right: 5px;
+}
+#monthlyPrice {
+  padding-left: 5px;
+  vertical-align: top;
+}
+
+/* ROUNDED SLIDER */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 34px;
+  height: 24px;
+}
+
+.switch input {display:none;}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #333;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 20px;
+  width: 20px;
+  left: 2px;
+  bottom: 2px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(10px);
+  -ms-transform: translateX(10px);
+  transform: translateX(10px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+/* ---------- */

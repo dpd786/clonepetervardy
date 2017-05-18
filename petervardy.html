@@ -52,9 +52,16 @@
 	  </select>
 	</div>
   <div id="searchBy">
-    <div class="searchBy">Search by:&nbsp;&nbsp;</div>
-		<div id="cashMonthly"><span id="cashPrice">Cash Price</span><span id="monthlyPrice"</span>Monthly Payments</div>
-		<div class="changeDownArrow priceSearch">
+    <div class="searchBy">Search by:</div>
+		<div id="cashMonthly">
+			<span id="cashPrice">Cash Price</span>
+			<label class="switch">
+			  <input type="checkbox">
+			  <div class="slider round"></div>
+			</label>
+			<span id="monthlyPrice"</span>Monthly Payments</div>
+		<div id="priceDiv">
+			<div class="changeDownArrow priceSearch">
 			<select id="minPrice" name="minPrice">
 				<option value="minPrice" selected>Min Price</option>
 				<option value="">&#163;1000</option>
@@ -63,7 +70,7 @@
 				<option value="">&#163;4000</option>
 			</select>
 		</div>
-		<div class="changeDownArrow priceSearch">
+			<div class="changeDownArrow priceSearch">
 			<select name="maxPrice" id="maxPrice">
 				<option value=""></option>
 				<option value=""></option>
@@ -72,7 +79,8 @@
 				<option value=""></option>
 			</select>
 		</div>
-  </div>
+  	</div>
+	</div>
 	<div>
 		<input type="text" placeholder="Postcode" id="postcode">
 	</div>
