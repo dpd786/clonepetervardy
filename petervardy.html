@@ -51,6 +51,7 @@
 	    <option value="used">Used</option>
 	  </select>
 	</div>
+
   <div id="searchBy">
     <div class="searchBy">Search by:</div>
 		<div id="cashMonthly">
@@ -62,30 +63,32 @@
 			<span id="monthlyPrice"</span>Monthly Payments</div>
 		<div id="priceDiv">
 			<div class="changeDownArrow priceSearch">
-			<select id="minPrice" name="minPrice">
-				<option value="minPrice" selected>Min Price</option>
-				<option value="">&#163;1000</option>
-				<option value="">&#163;2000</option>
-				<option value="">&#163;3000</option>
-				<option value="">&#163;4000</option>
-			</select>
-		</div>
+				<select id="minPrice" name="minPrice">
+					<option value="minPrice" selected>Min Price</option>
+					<option value="">&#163;1000</option>
+					<option value="">&#163;2000</option>
+					<option value="">&#163;3000</option>
+					<option value="">&#163;4000</option>
+				</select>
+			</div>
 			<div class="changeDownArrow priceSearch">
-			<select name="maxPrice" id="maxPrice">
+				<select name="maxPrice" id="maxPrice">
 				<option value=""></option>
 				<option value=""></option>
 				<option value=""></option>
 				<option value=""></option>
 				<option value=""></option>
 			</select>
-		</div>
+			</div>
   	</div>
 	</div>
-	<div>
-		<input type="text" placeholder="Postcode" id="postcode">
+
+	<div id="postcodeSearch">
+		<input type="text" placeholder="Postcode" id="postcode" class="postcodeSearch">
+		<div class="postcodeSearch">Show cars near you</div>
 	</div>
-	<div id="postcodetext">Show cars near you</div>
-	<button id="search-button">Search Cars<span> cars available</span></button>
+
+	<button id="search-button"><h1>Search Cars</h1><span>1</span><span> cars available</span></button>
 </form>
 <!-- FULL WIDTH PAGINATION PAGE  HERE -->
 

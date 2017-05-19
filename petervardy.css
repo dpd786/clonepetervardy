@@ -1,5 +1,6 @@
 * {
   font-family: sans-serif;
+  outline: 0;
 }
 html, body {
 	font-size: 16px;
@@ -38,9 +39,6 @@ html, body {
   display: block;
   padding: 12px 10px;
   font-weight: bold;
-}
-.navbar a:hover {
-  background-color: yellow;
 }
 .navbar li.bor-right:after {
   content : "";
@@ -104,10 +102,7 @@ select::-ms-expand {
 #searchBy {
   border: 1px solid #aaa;
   padding: 10px;
-  overflow: hidden;
   position: relative;
-  background-color: #eee;
-
 }
 .searchBy {
   font-size: 0.8em;
@@ -129,7 +124,7 @@ select::-ms-expand {
   clear: both;
   width: 49%;
   display: inline-block;
-  background-color: #fff;
+
 }
 #cashPrice {
   vertical-align: top;
@@ -191,3 +186,32 @@ input:checked + .slider:before {
 }
 
 /* ---------- */
+
+.postcodeSearch {
+  clear: both;
+  width: 45%;
+  display: inline-block;
+  border-radius: 5px;
+  font-size: 0.9rem;
+}
+#postcode {
+  border: 1px solid #aaa;
+  padding: 5px 10px;
+  margin-right: 5px;
+}
+
+#search-button {
+  width: 100%;
+  color: #fff;
+  background-color: #03b075;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  padding: 8px;
+  display: inline-block;
+  margin-top: 15px;
+  transition: background-color 0.25s ease;
+}
+#search-button h1 {
+  margin: 0;
+}
