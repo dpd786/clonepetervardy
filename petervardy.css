@@ -221,6 +221,8 @@ input:checked + .slider:before {
 #menuDiv {
   margin: 0;
   padding: 0 16px;
+  background-color: #f0f2f3;
+  color: #37383a;
 }
 #menuDiv h2 {
   margin: 0;
@@ -232,6 +234,8 @@ input:checked + .slider:before {
   font-size: 0.7rem;
   border-bottom: 1px solid #ccc;
 }
-
+#menuDiv i {
+  font-size: 1rem;
+}
 
 /* -------------------- */
