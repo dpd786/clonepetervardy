@@ -53,6 +53,7 @@ html, body {
 .search-dropdown-content {
   margin: 0;
   padding: 10px 15px;
+  display: none;
 }
 
 .search-dropdown-content h2 {
@@ -215,3 +216,22 @@ input:checked + .slider:before {
 #search-button h1 {
   margin: 0;
 }
+
+/* MENU MOBILE DROPDOWN */
+#menuDiv {
+  margin: 0;
+  padding: 0 16px;
+}
+#menuDiv h2 {
+  margin: 0;
+}
+#menuDiv ul {
+  list-style: none;
+  margin: 0;
+  padding: 10px 0;
+  font-size: 0.7rem;
+  border-bottom: 1px solid #ccc;
+}
+
+
+/* -------------------- */
