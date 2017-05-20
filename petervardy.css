@@ -218,24 +218,42 @@ input:checked + .slider:before {
 }
 
 /* MENU MOBILE DROPDOWN */
+
 #menuDiv {
   margin: 0;
   padding: 0 16px;
   background-color: #f0f2f3;
   color: #37383a;
 }
-#menuDiv h2 {
-  margin: 0;
-}
 #menuDiv ul {
   list-style: none;
   margin: 0;
-  padding: 10px 0;
+  padding: 0;
   font-size: 0.7rem;
-  border-bottom: 1px solid #ccc;
+
+}
+#menuDiv h2 {
+  margin: 0;
+  padding: 10px 0;
+  border-bottom: 1px solid #d8d8d8;
 }
 #menuDiv i {
   font-size: 1rem;
+}
+#menuDiv #contact h2 {
+  border-bottom: none;
+}
+#menuDiv li a {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  padding: 3px 0;
+}
+#menuDiv li a:hover {
+  color: #00ace1;
+}
+#mainMenu > li > ul li a {
+  padding-left: 10px;
 }
 
 /* -------------------- */
