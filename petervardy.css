@@ -8,7 +8,6 @@ html, body {
 	margin: 0;
 	min-width: 360px;
 }
-
 #logo {
 	text-align: center;
 	margin: 19px 0;
@@ -17,6 +16,7 @@ html, body {
 .navbar {
   background-color: #e7e4e4;
   width: 100%;
+  position: relative;
 }
 .navbar ul {
   list-style: none;
@@ -31,10 +31,10 @@ html, body {
   text-align: center;
   padding: 0;
   margin: 0;
-}
-.navbar a {
-  text-decoration: none;
+  cursor: pointer;
   color: #5f6061;
+}
+.navbar div {
   font-size: 1.1em;
   display: block;
   padding: 12px 10px;
@@ -50,6 +50,11 @@ html, body {
   height   : 50%;  /* or 100px */
   background: #ccc;
 }
+
+
+/* SEARCH MENU DROPDOWN */
+/* -------------------- */
+
 .search-dropdown-content {
   margin: 0;
   padding: 10px 15px;
@@ -218,12 +223,15 @@ input:checked + .slider:before {
 }
 
 /* MENU MOBILE DROPDOWN */
+/* -------------------- */
 
 #menuDiv {
   margin: 0;
   padding: 0 16px;
   background-color: #f0f2f3;
   color: #37383a;
+  margin-right: 0;
+  display: none;
 }
 #menuDiv ul {
   list-style: none;
@@ -235,12 +243,14 @@ input:checked + .slider:before {
 #menuDiv h2 {
   margin: 0;
   padding: 10px 0;
-  border-bottom: 1px solid #d8d8d8;
 }
 #menuDiv i {
   font-size: 1rem;
 }
-#menuDiv #contact h2 {
+#mainMenu li {
+  border-bottom: 1px solid #d8d8d8;
+}
+#menuDiv #contact {
   border-bottom: none;
 }
 #menuDiv li a {
@@ -255,5 +265,14 @@ input:checked + .slider:before {
 #mainMenu > li > ul li a {
   padding-left: 10px;
 }
+
+#mainMenu > li > ul {
+  display: none;
+}
+/* color on focus for searchbar */
+.fColor {
+  color: #00ace1;
+}
+
 
 /* -------------------- */
