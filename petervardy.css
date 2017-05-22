@@ -50,6 +50,20 @@ html, body {
   height   : 50%;  /* or 100px */
   background: #ccc;
 }
+#navSearchLink {
+  position: relative;
+}
+.arrowpointer {
+  width: 0;
+  height: 0;
+  position: absolute;
+  left: 25%;
+  display: inline-block;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid red;
+}
+
 
 
 /* SEARCH MENU DROPDOWN */
@@ -59,6 +73,7 @@ html, body {
   margin: 0;
   padding: 10px 15px;
   display: none;
+  border-top: 2px solid #d8d8d8;
 }
 
 .search-dropdown-content h2 {
@@ -232,6 +247,7 @@ input:checked + .slider:before {
   color: #37383a;
   margin-right: 0;
   display: none;
+  border-top: 2px solid #d8d8d8;
 }
 #menuDiv ul {
   list-style: none;
