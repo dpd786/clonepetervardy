@@ -251,7 +251,7 @@ select::-ms-expand {
 #menuDiv i {
   font-size: 1rem;
 }
-#mainMenu li {
+#mainMenu > li, #mainMenu > li > ul > li {
   border-bottom: 1px solid #d8d8d8;
 }
 #menuDiv #contact {
@@ -270,12 +270,15 @@ select::-ms-expand {
   padding-left: 10px;
 }
 
-#mainMenu > li > ul {
+#mainMenu > li ul {
   display: none;
 }
 /* color on focus for searchbar */
 .fColor {
   color: #00ace1;
+}
+#findVehicleSubMenu li:last-child, #service li:last-child, #about li:last-child {
+    border-bottom: none;
 }
 
 
