@@ -1,6 +1,6 @@
 * {
   font-family: sans-serif;
-  outline: 0; 
+  outline: 0;
 }
 html, body {
 	font-size: 16px;
@@ -260,25 +260,43 @@ select::-ms-expand {
 #menuDiv li a {
   display: block;
   text-decoration: none;
-  color: inherit;
+  color: #37383a;
   padding: 3px 0;
+  transition: color 0.5s ease;
 }
-#menuDiv li a:hover {
+#menuDiv > ul > li > h2 a:hover {
   color: #00ace1;
 }
 #mainMenu > li > ul li a {
   padding-left: 10px;
 }
+#mainMenu > li > ul > li a {
+  color: #333;
+  font-weight: normal;
+}
 
 #mainMenu > li ul {
   display: none;
 }
-/* color on focus for searchbar */
+/* color on focus for searchbar/menu */
 .fColor {
   color: #00ace1;
 }
 #findVehicleSubMenu li:last-child, #service li:last-child, #about li:last-child {
     border-bottom: none;
+}
+
+#findVehicleSubMenu > li > ul {
+  background-color: #ddd;
+  margin-bottom: 20px;
+  padding: 5px;
+}
+#findVehicleSubMenu > li > ul li {
+  border-bottom: 1px solid #c1c1c1;
+  margin: 0 10px;
+}
+#findVehicleSubMenu > li > ul li a {
+  padding: 5px 0;
 }
 
 
