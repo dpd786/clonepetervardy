@@ -37,12 +37,12 @@ $(document).ready(function () {
     
     
     $mainMenu.on("click", function () {
-        $(this).closest("i").toggleClass("fa-plus-circle fa-minus-circle");
+        $(this).find("i").eq(0).toggleClass("fa-plus-circle fa-minus-circle");
         $(this).children("ul").toggle(300);
     });
     
     $mainMenuSub.on("click", function (event) {
-        $(this).closest("i").toggleClass("fa-plus-circle fa-minus-circle");
+        $(this).find("i").toggleClass("fa-plus-circle fa-minus-circle");
         $(this).children("ul").toggle(300);
         event.stopPropagation();
     });
