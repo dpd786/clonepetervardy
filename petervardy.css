@@ -219,7 +219,11 @@ select::-ms-expand {
   padding: 8px;
   display: inline-block;
   margin-top: 15px;
-  transition: background-color 0.25s ease;
+
+}
+#search-button:hover {
+  background-color: #039975;
+transition: background-color 0.25s ease;
 }
 #search-button h1 {
   margin: 0;
@@ -299,5 +303,50 @@ select::-ms-expand {
   padding: 5px 0;
 }
 
-
+/* BANNER SLIDER        */
 /* -------------------- */
+
+.infoBarSlider h2 {
+  text-align: center;
+  width: 33.333%;
+  margin: 0;
+  position: absolute;
+}
+.infoBarSlider {
+  overflow: hidden;
+  height: 30px;
+}
+.infoBarSlider .slide {
+  width: 100%;
+  float: left;
+}
+.infoBarSlider figure {
+  position: relative;
+  width: 300%;
+  margin: 0;
+  left: 0;
+  animation: 10s slidey infinite;
+}
+keyframes slidey {
+  0% {
+    left: 0;
+  }
+  30% {
+    left: 0;
+  }
+  33.333% {
+    left: -100%;
+  }
+  63.33% {
+    left: -100%;
+  }
+  66.66% {
+    left: -200%;
+  }
+  96.66% {
+    left: -200%;
+  }
+  99.99% {
+    left: -300%;
+  }
+}
