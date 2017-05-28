@@ -306,47 +306,27 @@ transition: background-color 0.25s ease;
 /* BANNER SLIDER        */
 /* -------------------- */
 
-.infoBarSlider h2 {
-  text-align: center;
-  width: 33.333%;
-  margin: 0;
-  position: absolute;
-}
 .infoBarSlider {
+    width: 720px;
   overflow: hidden;
-  height: 30px;
+  height: 50px;
+}
+.infoBarSlider .slides {
+  display: block;
+    width: 2160px;
+    height: 50px;
+    margin: 0;
+    padding: 0;
 }
 .infoBarSlider .slide {
-  width: 100%;
-  float: left;
+    float: left;
+    list-style: none;
+    width: 720px;
+    height: 50px;
 }
-.infoBarSlider figure {
-  position: relative;
-  width: 300%;
+.infoBarSlider h2 {
+  text-align: center;
   margin: 0;
-  left: 0;
-  animation: 10s slidey infinite;
+    padding-top: 11px;
 }
-keyframes slidey {
-  0% {
-    left: 0;
-  }
-  30% {
-    left: 0;
-  }
-  33.333% {
-    left: -100%;
-  }
-  63.33% {
-    left: -100%;
-  }
-  66.66% {
-    left: -200%;
-  }
-  96.66% {
-    left: -200%;
-  }
-  99.99% {
-    left: -300%;
-  }
-}
+
