@@ -1,5 +1,9 @@
 $(document).ready(function () {
     "use strict";
+
+/* TOGGLING BETWEEN NAVBAR MENU LINKS */
+/* ---------------------------------- */
+
     $("#navSearchLink").on('click', function () {
         $("#navMenuLink").removeClass("fColor");
         $(".third").removeClass("arrowpointer");
@@ -21,30 +25,33 @@ $(document).ready(function () {
             $(".third").toggleClass("arrowpointer");
         });
     });
-    
+
+    /* SELECTING SUBMENUS                       */
+    /* -----------------------------------------*/
+
+    var $mainMenu = $("#mainMenu > li");
+    var $mainMenuSub = $("#mainMenu > li > ul > li");
+
+
+    $mainMenu.on("click", function () {
+        $(this).find("i").eq(0).toggleClass("fa-plus-circle fa-minus-circle");
+        $(this).children("ul").toggle(300);
+    });
+
+    $mainMenuSub.on("click", function (event) {
+        $(this).find("i").toggleClass("fa-plus-circle fa-minus-circle");
+        $(this).children("ul").toggle(300);
+        event.stopPropagation();
+    });
+
+/* TOGGLE SWITCH */
+/* ------------- */
+
     $(".switch").on("click", function (event) {
         $(".togButton").toggleClass("change");
         $("#cashPrice").toggleClass("cashColor");
         $("#monthlyPrice").toggleClass("monthlyColor");
         event.stopPropagation();
     });
-    
-    /* SELECTING SUBMENUS                       */
-    /* -----------------------------------------*/
-    
-    var $mainMenu = $("#mainMenu > li");
-    var $mainMenuSub = $("#mainMenu > li > ul > li");
-    
-    
-    $mainMenu.on("click", function () {
-        $(this).find("i").eq(0).toggleClass("fa-plus-circle fa-minus-circle");
-        $(this).children("ul").toggle(300);
-    });
-    
-    $mainMenuSub.on("click", function (event) {
-        $(this).find("i").toggleClass("fa-plus-circle fa-minus-circle");
-        $(this).children("ul").toggle(300);
-        event.stopPropagation();
-    });
-    
+
 });
