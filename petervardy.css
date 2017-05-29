@@ -307,7 +307,7 @@ transition: background-color 0.25s ease;
 /* -------------------- */
 
 .barSlider {
-    width: 100%;
+    width: 670px;
     overflow: hidden;
     height: 50px;
     background-color: #37383a;

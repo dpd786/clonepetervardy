@@ -74,7 +74,7 @@ $(document).ready(function () {
     
     function startSlider() {
         interval = setInterval(function () {
-            $slideContainer.animate({'margin-left': '-=' +width}, animationSpeed, function () {
+            $slideContainer.animate({'margin-left': '-='+width}, animationSpeed, function () {
                 currentSlide++;
                 if (currentSlide === $slides.length) {
                     currentSlide = 1;
@@ -88,7 +88,7 @@ $(document).ready(function () {
         clearInterval(interval);
     }
     
-    $(".barSlider").on("mouseenter", stopSlider).on("mouseleave", startSlider);
+    $slider.on("mouseenter", stopSlider).on("mouseleave", startSlider);
     
     startSlider();
 });
