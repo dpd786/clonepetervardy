@@ -306,27 +306,37 @@ transition: background-color 0.25s ease;
 /* BANNER SLIDER        */
 /* -------------------- */
 
-.infoBarSlider {
-    width: 720px;
-  overflow: hidden;
-  height: 50px;
-}
-.infoBarSlider .slides {
-  display: block;
-    width: 2160px;
+.barSlider {
+    width: 100%;
+    overflow: hidden;
     height: 50px;
-    margin: 0;
-    padding: 0;
+    background-color: #37383a;
+    color: #fff;
+    font-weight: bold;
 }
-.infoBarSlider .slide {
+.barSlider .slides {
+    padding: 0;
+    margin: 0;
+    height: 50px;
+    width: 300%;
+}
+.barSlider .slide {
     float: left;
     list-style: none;
-    width: 720px;
-    height: 50px;
+    height: 35px;
+    width: 33.333333%;
+    text-align: center;
+    padding: 8px 0 7px;
 }
-.infoBarSlider h2 {
-  text-align: center;
-  margin: 0;
-    padding-top: 11px;
+.barSlider .s2 {
+    padding: 14px 0 1px;
 }
-
+.fa-thumbs-o-up {
+    color: #fff; 
+}
+.fa-circle {
+    color: #09b7fb;
+}
+.fa-star {
+    color: #12cf6c;
+}

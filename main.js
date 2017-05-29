@@ -60,29 +60,35 @@ $(document).ready(function () {
 /* -------------------------- */
 
     /* DECLARATION */
-    var width = 720,
-        animationSpeed = 1000,
-        pause = 3000,
-        currentSlide = 1;
+    var width = 670;
+    var animationSpeed = 1000;
+    var pause = 3000;
+    var currentSlide = 1;
     
     /* cache DOM */
-    var $slider = $(".infoBarSlider");
+    var $slider = $(".barSlider");
     var $slideContainer = $slider.find(".slides");
     var $slides = $slideContainer.find(".slide");
     
     var interval;
     
-    function startSlider() {
-        setInterval(function() {
-           interval = $slideContainer.animate({'margin-left': '-='+width}, animationSpeed, function() {
-               currentSlide++;
-               if (currentSlide === $slides.length) {
-                   currentSlide = 1;
-                   $slideContainer.css('margin-left', 0);
-               }
-           }); 
-        }, pause);
+    //function startSlider() {
+    setInterval(function () {
+        $slideContainer.animate({'margin-left': '-=' +width}, animationSpeed, function () {
+            currentSlide = currentSlide + 1;
+            if (currentSlide === $slides.length) {
+                currentSlide = 1;
+                $slideContainer.css('margin-left', 0);
+            }
+        });
+    }, pause);
+    //}
+    
+    function stopSlider() {
+        clearInterval(interval);
     }
     
-    $slider.on('mouseenter', pauseSlider).on('mouseleave', startSlider);
+    //$slider.on('mouseenter', stopSlider).on('mouseleave', startSlider);
+    
+    //startSlider();
 });
