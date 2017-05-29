@@ -307,7 +307,7 @@ transition: background-color 0.25s ease;
 /* -------------------- */
 
 .barSlider {
-    width: 670px;
+    width: 100%;
     overflow: hidden;
     height: 50px;
     background-color: #37383a;
@@ -318,13 +318,13 @@ transition: background-color 0.25s ease;
     padding: 0;
     margin: 0;
     height: 50px;
-    width: 300%;
+    width: 400%;
 }
 .barSlider .slide {
     float: left;
     list-style: none;
     height: 35px;
-    width: 33.333333%;
+    width: 25%;
     text-align: center;
     padding: 8px 0 7px;
 }
@@ -340,3 +340,13 @@ transition: background-color 0.25s ease;
 .fa-star {
     color: #12cf6c;
 }
+
+/* MAIN SLIDER        */
+/* -------------------- */
+
+.mainSider {
+}
+
+
+
+

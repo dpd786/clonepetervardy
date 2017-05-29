@@ -60,9 +60,9 @@ $(document).ready(function () {
 /* -------------------------- */
 
     /* DECLARATION */
-    var width = 670;
-    var animationSpeed = 1000;
-    var pause = 3000;
+    var width = 100;
+    var animationSpeed = 500;
+    var pause = 4000;
     var currentSlide = 1;
     
     /* cache DOM */
@@ -74,7 +74,7 @@ $(document).ready(function () {
     
     function startSlider() {
         interval = setInterval(function () {
-            $slideContainer.animate({'margin-left': '-='+width}, animationSpeed, function () {
+            $slideContainer.animate({'margin-left': '-='+width+'%'}, animationSpeed, function () {
                 currentSlide++;
                 if (currentSlide === $slides.length) {
                     currentSlide = 1;
