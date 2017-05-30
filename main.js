@@ -61,17 +61,17 @@ $(document).ready(function () {
 
     /* DECLARATION */
     var width = 100;
-    var animationSpeed = 500;
-    var pause = 4000;
+    var animationSpeed = 800;
+    var pause = 5000;
     var currentSlide = 1;
-    
+
     /* cache DOM */
     var $slider = $(".barSlider");
     var $slideContainer = $slider.find(".slides");
     var $slides = $slideContainer.find(".slide");
-    
+
     var interval;
-    
+
     function startSlider() {
         interval = setInterval(function () {
             $slideContainer.animate({'margin-left': '-='+width+'%'}, animationSpeed, function () {
@@ -83,12 +83,21 @@ $(document).ready(function () {
             });
         }, pause);
     }
-    
+
     function stopSlider() {
         clearInterval(interval);
     }
-    
+
     $slider.on("mouseenter", stopSlider).on("mouseleave", startSlider);
-    
+
     startSlider();
+
+
+    /* MAIN SLIDES ANIMATION FOR MOBILE */
+    /* -------------------------- */
+
+
+
+
+
 });
