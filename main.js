@@ -29,8 +29,8 @@ $(document).ready(function () {
     /* SELECTING SUBMENUS                       */
     /* -----------------------------------------*/
 
-    var $mainMenu = $("#mainMenu > li");
-    var $mainMenuSub = $("#mainMenu > li > ul > li");
+    var $mainMenu = $("#mainMenu > li"),
+        $mainMenuSub = $("#mainMenu > li > ul > li");
 
 
     $mainMenu.on("click", function () {
@@ -60,10 +60,10 @@ $(document).ready(function () {
 /* -------------------------- */
 
     /* DECLARATION */
-    var width = 100;
-    var animationSpeed = 800;
-    var pause = 5000;
-    var currentSlide = 1;
+    var width = 100,
+        animationSpeed = 800,
+        pause = 4000,
+        currentSlide = 1;
 
     /* cache DOM */
     var $slider = $(".barSlider");
@@ -74,7 +74,7 @@ $(document).ready(function () {
 
     function startSlider() {
         interval = setInterval(function () {
-            $slideContainer.animate({'margin-left': '-='+width+'%'}, animationSpeed, function () {
+            $slideContainer.animate({'margin-left': '-=' + width + '%'}, animationSpeed, function () {
                 currentSlide++;
                 if (currentSlide === $slides.length) {
                     currentSlide = 1;
@@ -96,8 +96,39 @@ $(document).ready(function () {
     /* MAIN SLIDES ANIMATION FOR MOBILE */
     /* -------------------------- */
 
+  /* DECLARATION */
+    var width2 = 100,
+        animationSpeed2 = 1000,
+        pause2 = 5000,
+        currentSlide2 = 1;
 
+    /* cache DOM */
+    var $slider2 = $(".mainSlider"),
+        $slideContainer2 = $slider2.find(".slides"),
+        $slides2 = $slideContainer2.find(".slide"),
+        $dots = $(".dots"),
+        interval2;
 
+    function startSlider2() {
+        interval2 = setInterval(function () {
+            $slideContainer2.animate({'margin-left': '-=' + width2 + '%'}, animationSpeed2, function () {
+                currentSlide2++;
+                
+                if (currentSlide2 === $slides.length) {
+                    currentSlide2 = 1;
+                    $slideContainer2.css("margin-left", 0);
+                }
+            });
+        }, pause2);
+    }
+
+    function stopSlider2() {
+        clearInterval(interval2);
+    }
+
+    $slider2.on("mouseenter", stopSlider2).on("mouseleave", startSlider2);
+
+    startSlider2();
 
 
 });
