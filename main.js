@@ -129,6 +129,14 @@ $(document).ready(function () {
     $slider2.on("mouseenter", stopSlider2).on("mouseleave", startSlider2);
 
     startSlider2();
-
+    
+    var $dot = $(".dot"),
+        $dots = $(".dots .s");
+    
+    $dot.on("click", function() {
+        $dots.removeClass("active");
+        $(this).children(".s").addClass("active");
+    });
+   
 
 });
