@@ -109,18 +109,31 @@ $(document).ready(function () {
         interval2,
         $dot = $(".dot"),
         $dots = $(".dots .s"),
-        $dotLength = $dot.length;
+        $dotLength = $dot.length,
+        x = document.querySelectorAll(".dot span");
 
-    function startSlider2() {
+        function nextButton(n) {
+            $dots.removeClass("active");
+            x[n-1].className += " active";
+        }
+
+        $dot.on("click", function () {
+            $dots.removeClass("active");
+            $(this).children(".s").addClass("active");
+
+        });
+
+    function startSlider2(xwidth2) {
         interval2 = setInterval(function () {
             $slideContainer2.animate({'margin-left': '-=' + width2 + '%'}, animationSpeed2, function () {
                 currentSlide2++;
-                
+
                 if (currentSlide2 === $slides.length) {
                     currentSlide2 = 1;
                     $slideContainer2.css("margin-left", 0);
                 }
                 nextButton(currentSlide2);
+
             });
         }, pause2);
     }
@@ -129,20 +142,8 @@ $(document).ready(function () {
         clearInterval(interval2);
     }
 
-    $slider2.on("mouseenter", stopSlider2).on("mouseleave", startSlider2);
+    $slider2.on("mouseenter", stopSlider2).on("mouseleave", startSlider2());
 
     startSlider2();
-    
-    function nextButton(n) {
-        $dots.removeClass("active");
-        //alert($dot[n-1]);
-        $dot[n].children(".s").addClass("active");
-    }
-    
-    $dot.on("click", function () {
-        $dots.removeClass("active");
-        $(this).children(".s").addClass("active");
-    });
-   
 
 });
