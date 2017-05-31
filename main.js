@@ -106,8 +106,10 @@ $(document).ready(function () {
     var $slider2 = $(".mainSlider"),
         $slideContainer2 = $slider2.find(".slides"),
         $slides2 = $slideContainer2.find(".slide"),
-        $dots = $(".dots"),
-        interval2;
+        interval2,
+        $dot = $(".dot"),
+        $dots = $(".dots .s"),
+        $dotLength = $dot.length;
 
     function startSlider2() {
         interval2 = setInterval(function () {
@@ -118,6 +120,7 @@ $(document).ready(function () {
                     currentSlide2 = 1;
                     $slideContainer2.css("margin-left", 0);
                 }
+                nextButton(currentSlide2);
             });
         }, pause2);
     }
@@ -130,10 +133,13 @@ $(document).ready(function () {
 
     startSlider2();
     
-    var $dot = $(".dot"),
-        $dots = $(".dots .s");
+    function nextButton(n) {
+        $dots.removeClass("active");
+        //alert($dot[n-1]);
+        $dot[n].children(".s").addClass("active");
+    }
     
-    $dot.on("click", function() {
+    $dot.on("click", function () {
         $dots.removeClass("active");
         $(this).children(".s").addClass("active");
     });
