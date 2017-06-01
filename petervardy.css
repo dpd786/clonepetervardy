@@ -389,3 +389,42 @@ transition: background-color 0.25s ease;
     background-color: #b7b7b7;
     cursor: pointer;
 }
+/* VEHICLE TYPE LIST    */
+/* -------------------- */
+
+.vehicleList {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    color: #f8f8f8;
+    font-size: 1.1em;
+    letter-spacing: 0.5px;
+    font-weight: bold;
+}
+.vehTypes {
+    background-color: #37383a;
+    float: left;
+    width: 49.5%;
+    margin: 0;
+    text-align: center;
+    padding: 50px 0;
+    margin-bottom: 1%;
+    margin-right: 1%;
+}
+.vehTypes:nth-child(even) {
+    margin-right: 0%;
+}
+.vehicleList:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+.infopanels {
+    box-shadow: 1px 1px 1px #d8d8d8, -1px 1px 1px #d8d8d8;
+    margin: 10px;
+}
+.infopanels ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}

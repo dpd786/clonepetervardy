@@ -90,7 +90,7 @@ $(document).ready(function () {
 
     $slider.on("mouseenter", stopSlider).on("mouseleave", startSlider);
 
-    startSlider();
+    //startSlider();
 
 
     /* MAIN SLIDES ANIMATION FOR MOBILE */
@@ -99,7 +99,7 @@ $(document).ready(function () {
   /* DECLARATION */
     var width2 = 100,
         animationSpeed2 = 1000,
-        pause2 = 5000,
+        pause2 = 5500,
         currentSlide2 = 1;
 
     /* cache DOM */
@@ -122,7 +122,7 @@ $(document).ready(function () {
     function startSlider3(clickWidth) {
         interval3 = setInterval(function () {
             $slideContainer2.animate({'margin-left': clickWidth + '%'}, animationSpeed2);
-            clearInterval(interval3)
+            clearInterval(interval3);
         });
     }
 
@@ -155,6 +155,6 @@ $(document).ready(function () {
 
     $slider2.on("mouseenter", stopSlider2).on("mouseleave", startSlider2);
 
-    startSlider2();
+    //startSlider2();
 
 });
