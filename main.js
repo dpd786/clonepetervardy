@@ -88,7 +88,7 @@ $(document).ready(function () {
         clearInterval(interval);
     }
 
-    $slider.on("mouseenter", stopSlider).on("mouseleave", startSlider);
+    //$slider.on("mouseenter", stopSlider).on("mouseleave", startSlider);
 
     //startSlider();
 
@@ -153,7 +153,7 @@ $(document).ready(function () {
         clearInterval(interval2);
     }
 
-    $slider2.on("mouseenter", stopSlider2).on("mouseleave", startSlider2);
+    //$slider2.on("mouseenter", stopSlider2).on("mouseleave", startSlider2);
 
     //startSlider2();
 

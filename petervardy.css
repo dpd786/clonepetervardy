@@ -335,7 +335,7 @@ transition: background-color 0.25s ease;
 .fa-thumbs-o-up {
     color: #fff;
 }
-.fa-circle {
+.barSlider .fa-circle {
     color: #09b7fb;
 }
 .fa-star {
@@ -389,6 +389,7 @@ transition: background-color 0.25s ease;
     background-color: #b7b7b7;
     cursor: pointer;
 }
+
 /* VEHICLE TYPE LIST    */
 /* -------------------- */
 
@@ -405,7 +406,7 @@ transition: background-color 0.25s ease;
     background-color: #37383a;
     float: left;
     width: 49.5%;
-    margin: 0;
+    margin: 0 auto;
     text-align: center;
     padding: 50px 0;
     margin-bottom: 1%;
@@ -419,12 +420,47 @@ transition: background-color 0.25s ease;
     display: block;
     clear: both;
 }
-.infopanels {
-    box-shadow: 1px 1px 1px #d8d8d8, -1px 1px 1px #d8d8d8;
+
+.infopanel {    
     margin: 10px;
 }
-.infopanels ul {
+.innerPanel {
+    box-shadow: 1px 1px 1px #d8d8d8, -1px 1px 1px #d8d8d8;
+}
+.infopanel ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
+}
+
+/*       FOOTER         */
+/* -------------------- */
+footer {
+    padding-top: 20px;
+    background-color: #f0f2f3;
+}
+footer p, footer form, footer .mediaLinks {
+    margin: 10px auto;
+    text-align: center;
+}
+footer .mediaLinks {
+    padding: 10px 0;
+}
+footer .fa {
+    color: #f0f2f3;
+}
+footer .fc {
+    color: #5e769f;
+}
+footer .tw {
+    color: #74add2;
+}
+footer .yt {
+    color: #c75457;
+}
+footer .insta {
+    color: #3e759e;
+}
+footer .lkn {
+    color: #308fc2;
 }
