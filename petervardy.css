@@ -421,7 +421,7 @@ transition: background-color 0.25s ease;
     clear: both;
 }
 
-.infopanel {    
+.infopanel {
     margin: 10px;
 }
 .innerPanel {
@@ -463,4 +463,45 @@ footer .insta {
 }
 footer .lkn {
     color: #308fc2;
+}
+.footerReview {
+  text-align: center;
+  margin: 10px auto;
+}
+.footerReview i {
+  color: #12cf6c;
+}
+.lowerFooter {
+  background-color: #1e1d1d;
+  padding: 15px 0;
+}
+.lowerFooter > div {
+  border-bottom: 1px solid #cbcbcb;
+  margin: 0 15px;
+}
+.lowerFooter ul {
+  list-style-type: none;
+  padding: 5px 0;
+  margin: 0;
+}
+.lowerFooter h3 {
+  font-size: 1.3em;;
+  margin: 0;
+  padding: 10px 0;
+  font-weight: normal;
+}
+.lowerFooter i {
+  color: #cbcbcb;
+}
+.lowerFooter p {
+  text-align: left;
+  font-size: 0.8em;
+}
+.lowerFooter a  {
+  color: #cbcbcb;
+  text-decoration: none;
+}
+.lowerFooter #franchises ul {
+  display: inline-block;
+  width: 48%;
 }
